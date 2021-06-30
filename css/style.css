@@ -1,0 +1,39 @@
+body
+{
+    /*Ubicacion donde esta la imagen que pondremos de fondo*/
+    background-image: url(../img/fondo2.jpg);
+
+    /*Para que no se repita la imagen de fondo en modo de mosaico*/
+    background-repeat: no-repeat;
+
+    /*Para que no supere la altura del contenido*/
+    background-attachment: fixed;
+
+    /*Para que se adapte a el tamaño de el navegador donde se vea*/
+    background-size: cover;
+}
+
+#list2
+{
+    margin-top: -4px;
+}
+
+ul li
+{
+    margin-left: 60px;
+}
+
+#inicio
+{
+    width: 70px;
+    margin-top: -38px;
+}
+
+#titulo1
+{
+    border-radius: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    height: 50px;
+    padding-top: 8px;
+}

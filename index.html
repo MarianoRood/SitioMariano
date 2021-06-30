@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+    #contenedor
+    {
+        margin-top: 3%;
+        margin-left: 6%;
+        margin-right: 6%;
+        text-align: justify;
+    }
+
+    #fl
+    {
+        width: 440px;
+        height: 300px;
+        border-radius: 60%;
+    }
+
+    #list
+    {
+        margin-top: 4%;
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
+    strong
+    {
+        color: rgb(0, 0, 0);
+    }
+    </style>
+    <title>Navs & Tabs</title>
+</head>
+<body>
+    <div id="contenedor">
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Mensajes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Configuracion</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-target="#registro" type="button" role="tab" aria-controls="registro" aria-selected="false" data-bs-toggle="modal">Perfil</button>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <br>
+            <p>The Flash es una serie de televisión estadounidense de superhéroes desarrollada por Greg Berlanti, 
+                Andrew Kreisberg y Geoff Johns, que se emite en The CW en Estados Unidos. Está basada en el 
+                personaje de DC Comics Barry Allen / Flash, un superhéroe disfrazado que lucha contra el crimen 
+                con el poder de moverse a velocidades sobrehumanas. Es una serie derivada de Arrow, que existe en 
+                el mismo universo ficticio. La serie sigue a Barry Allen, interpretado por Grant Gustin, un 
+                investigador de escenas del crimen que obtiene velocidad sobrehumana, que usa para luchar 
+                contra criminales, incluidos otros que también han adquirido habilidades sobrehumanas.
+
+                Inicialmente concebido como un piloto de puerta trasera, la recepción positiva que recibió Gustin 
+                durante sus dos apariciones como Barry en Arrow llevó a los ejecutivos a elegir desarrollar un 
+                piloto completo para utilizar un presupuesto más amplio y ayudar a desarrollar el mundo de Barry 
+                con más detalle. La serie se filmó principalmente en Vancouver, Columbia Británica, Canadá.
+            </p>
+            <br>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <img src="../img/TheFlash4.jpg" id="fl">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div id="list">
+                <ul class="list-group text-center">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+            </div>
+            
+            
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            
+            <div id="list">
+                <div class="accordion" id="accordionExample" >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>The Flash</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            La primera temporada sigue al investigador de escenas del crimen Barry Allen, 
+                            que obtiene velocidad sobrehumana después de la explosión del acelerador de 
+                            partículas de STAR Labs que usa para combatir el crimen y atrapar a otros 
+                            metahumanos en Ciudad Central como Flash, un superhéroe enmascarado. Barry 
+                            persigue al asesino de su madre, Eobard Thawne, y finalmente descubre que su 
+                            mentor Harrison Wells es Eobard disfrazado. Al final de la temporada, el antepasado 
+                            de Eobard, Eddie, se sacrifica para borrar a Eobard de la existencia, pero abre una 
+                            singularidad en el proceso. En la segunda temporada, la singularidad trae al velocista 
+                            Zoom de un universo paralelo, que busca eliminar a todos los demás velocistas del 
+                            multiverso. Después de que Zoom mata al padre de Barry, Barry derrota a Zoom y 
+                            viaja en el tiempo para salvar la vida de su madre.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Fuerza de la Velocidad</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            La Fuerza de la Velocidad es la fuente extra dimensional de los poderes de Barry 
+                            Allen y todos los demás velocistas como él y la clave para perfeccionar su 
+                            capacidad de afectar a la estructura de la realidad. Les permite mejorar sus 
+                            habilidades basadas en el movimiento, así como darles otras, tales como vibrar 
+                            sus cuerpos a diferentes frecuencias y poder pasar a través de la materia, afectando 
+                            el estado de sus enlaces moleculares. La Fuerza Veloz es en realidad una fuente 
+                            de poder creada y potenciada por seres extradimensionales.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+           
+            
+            
+            ...</div>
+                <!-- Modal -->
+                <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Registrar Cliente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                              <div class="form-group">
+                                  <label class="form-label" for="nombre">Nombre:</label>
+                                  <input class="form-control" type="text" name="nombre" placeholder="Ingresa tu Nombre">
+                              </div>
+                              <div class="form-group">
+                                <label class="form-label" for="apaterno">Apellido Paterno:</label>
+                                <input class="form-control" type="text" name="apaterno" placeholder="Ingresa tu Apellido Paterno">
+                              </div>
+                              <div class="form-group">
+                                <label class="form-label" for="amaterno">Apellido Materno:</label>
+                                <input class="form-control" type="text" name="amaterno" placeholder="Ingresa tu Apellido Materno">
+                              </div>
+                              <div class="form-group">
+                                  <label class="form-label" for="sex">Sexo:</label>
+                                <select class="form-select" aria-label="Default select example" name="sex">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                <label class="form-label" for="edad">Edad:</label>
+                                <input class="form-control" type="text" name="edad" placeholder="Ingresa tu Edad">
+                              </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+      </div>
+    </div>
+    
+
+      <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
